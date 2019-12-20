@@ -4,7 +4,7 @@ const messageSchema = new Schema({
   userId: String,
   username: String,
   date: String,
-  message: String
+  text: String
 });
 
 module.exports = model('Message', messageSchema);

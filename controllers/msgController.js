@@ -22,7 +22,7 @@ router.post('/new-message', requireUser, async (req, res) => {
       userId: req.userId,
       date: new Date(),
       username: user.username,
-      message: req.body.message
+      text: req.body.text
     };
     const message = await Message.create(newMessage);
     res.json(message);

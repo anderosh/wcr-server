@@ -3,7 +3,7 @@ const router = Router();
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
-router.post('/singup', async (req, res) => {
+router.post('/sing-up', async (req, res) => {
   const { username, email, password } = req.body;
   const user = new User({
     username,
